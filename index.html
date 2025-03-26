@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Два блока</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(180deg, #078699 0%, #03A7B8 40%, #01E0E7 100%);
+        }
+        .block {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .beige, .green {
+            height: 50%;
+        }
+        .beige video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+            height: 250%;
+        }
+    </style>
+</head>
+<body>
+<div class="block beige">
+    <video src="1.mp4" autoplay muted loop playsinline></video>
+<!--    <img src="124.png" alt="123">-->
+</div>
+<div class="block green"></div>
+</body>
+</html>
